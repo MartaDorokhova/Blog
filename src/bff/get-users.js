@@ -1,0 +1,5 @@
+/*Возвращает запрос пользователей из базы данных*/
+export const getUsers = () =>
+	fetch('http://localhost:3005/users').then((loadedUsers) =>
+		loadedUsers.json(),
+	);
