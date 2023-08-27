@@ -7,7 +7,7 @@ export const Blog = () => {
 	return (
 		<Div>
 			<i className="fa fa-camera-retro fa-2x" />
-			<div>123</div>
+			<div>123 Привет</div>
 		</Div>
 	);
 };
