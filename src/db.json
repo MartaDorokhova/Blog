@@ -3,6 +3,7 @@
 		{
 			"id": "001",
 			"login": "marta",
+			"password": "qwerty123",
 			"registrated_at": "2025-9-22",
 			"role_id": 0
 		}
