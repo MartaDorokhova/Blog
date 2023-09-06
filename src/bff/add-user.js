@@ -12,4 +12,4 @@ export const addUser = (login, password) =>
 				generateDate /*Заполнение в нашем проекте с помощью генератора случайных дат*/,
 			role_id: 2 /*Должны назначить новому пользователю роль Читатель с id = 2*/,
 		}),
-	});
+	}).then((createdUser) => createdUser.json());
