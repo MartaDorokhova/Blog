@@ -1,5 +1,5 @@
 /*Возвращает запрос пользователей из базы данных*/
 export const getUsers = () =>
-	fetch('http://localhost:3005/users').then((loadedUsers) =>
+	fetch('http://localhost:3004/users').then((loadedUsers) =>
 		loadedUsers.json(),
 	);
