@@ -4,6 +4,8 @@ import {
 	register,
 	fetchUsers,
 	fetchRoles,
+	updateUserRole,
+	removeUser,
 } from './operations';
 
 export const server = {
@@ -12,4 +14,6 @@ export const server = {
 	register,
 	fetchUsers,
 	fetchRoles,
+	updateUserRole,
+	removeUser,
 };

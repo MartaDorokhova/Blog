@@ -7,8 +7,8 @@ const Div = styled.div`
 	align-items: center;
 `;
 
-export const Content = ({ children, error }) =>
-	error ? (
+export const Content = ({ children, error }) => {
+	return error ? (
 		<Div>
 			<H2>Ошибка</H2>
 			<div>{error}</div>
@@ -16,3 +16,4 @@ export const Content = ({ children, error }) =>
 	) : (
 		children
 	);
+};
