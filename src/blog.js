@@ -5,6 +5,7 @@ import { Header, Footer } from './components';
 import { setUser } from './actions';
 import { Authorization, Post, Registration, Users } from './pages';
 import styled from 'styled-components';
+import { Modal } from './components';
 
 const Page = styled.div`
 	padding: 120px 0 20px;
@@ -47,6 +48,7 @@ export const Blog = () => {
 				</Routes>
 			</Page>
 			<Footer />
+			<Modal />
 		</AppColumn>
 	);
 };

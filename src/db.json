@@ -149,25 +149,11 @@
       "id": 3
     },
     {
-      "author_id": "001",
-      "post_id": "001",
-      "published_at": "2045-04-13 04:04",
-      "content": "Привет всем! ",
-      "id": 4
-    },
-    {
       "author_id": "pmhANwd",
       "post_id": "001",
       "published_at": "2050-04-06 18:58",
       "content": "Об чем это? ",
       "id": 5
-    },
-    {
-      "author_id": "pmhANwd",
-      "post_id": "001",
-      "published_at": "2043-09-23 15:19",
-      "content": "Ересь",
-      "id": 6
     }
   ],
   "sessions": [
@@ -194,13 +180,13 @@
       "id": 2
     },
     {
-      "hash": "0.31174388217510395904241704556625336408615112304688",
+      "hash": "0.33230408357202345648317987070186063647270202636719",
       "user": {
-        "id": "pmhANwd",
-        "login": "ritulyok",
+        "id": "001",
+        "login": "marta",
         "password": "qwe123",
         "registeredAt": "2025-9-22",
-        "roleId": 1
+        "roleId": 0
       },
       "id": 3
     }
