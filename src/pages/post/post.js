@@ -1,7 +1,7 @@
 import { useEffect } from 'react';
-import { useParams } from 'react-router-dom';
+import { useMatch, useParams } from 'react-router-dom';
 import { useDispatch, useSelector } from 'react-redux';
-import { PostContent, Comments } from './components';
+import { PostContent, Comments, PostForm } from './components';
 import { selectPost } from '../../selectors';
 import { useServerRequest } from '../../hooks';
 import styled from 'styled-components';
@@ -11,6 +11,7 @@ const PostContainer = ({ className }) => {
 	const post = useSelector(selectPost);
 	const dispatch = useDispatch();
 	const params = useParams();
+	const isEditing = useMatch('/post/:id/edit');
 	const requestServer = useServerRequest();
 
 	useEffect(() => {
@@ -18,8 +19,14 @@ const PostContainer = ({ className }) => {
 	}, [dispatch, requestServer, params.id]);
 	return (
 		<div className={className}>
-			<PostContent post={post} />
-			<Comments comments={post.comments} postId={post.id} />
+			{isEditing ? (
+				<PostForm post={post} />
+			) : (
+				<>
+					<PostContent post={post} />
+					<Comments comments={post.comments} postId={post.id} />
+				</>
+			)}
 		</div>
 	);
 };
