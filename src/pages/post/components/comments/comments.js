@@ -26,9 +26,12 @@ const CommentsContainer = ({ className, comments, postId }) => {
 					placeholder="Комментарий..."
 					onChange={(event) => setNewComment(event.target.value)}
 				></textarea>
-				<div onClick={() => onNewCommentAdd(userId, postId, newComment)}>
-					<Icon margin="0 0 0 10px" id="fa-paper-plane-o" size="18px" />
-				</div>
+				<Icon
+					margin="0 0 0 10px"
+					id="fa-paper-plane-o"
+					size="18px"
+					onClick={() => onNewCommentAdd(userId, postId, newComment)}
+				/>
 			</div>
 
 			<div className="comments">

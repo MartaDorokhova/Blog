@@ -37,19 +37,32 @@ const CommentContainer = ({
 			<div className="comment">
 				<div className="information-panel">
 					<div className="author">
-						<Icon margin="0 0 0 0" id="fa-user-circle-o" size="18px" />
+						<Icon
+							margin="0 0 0 0"
+							id="fa-user-circle-o"
+							size="18px"
+							inactive={true}
+						/>
 						{author}
 					</div>
 					<div className="published-at">
-						<Icon margin="0 0 0 0" id="fa-calendar-o" size="18px" />
+						<Icon
+							margin="0 0 0 0"
+							id="fa-calendar-o"
+							size="18px"
+							inactive={true}
+						/>
 						{publishedAt}
 					</div>
 				</div>
 				<div className="content-text">{content}</div>
 			</div>
-			<div onClick={() => onCommentRemove(id)}>
-				<Icon margin="0 0 0 10px" id="fa-trash-o" size="21px" />
-			</div>
+			<Icon
+				margin="0 0 0 10px"
+				id="fa-trash-o"
+				size="21px"
+				onClick={() => onCommentRemove(id)}
+			/>
 		</div>
 	);
 };

@@ -9,6 +9,4 @@ export const updatePost = ({ id, imageUrl, title, content }) =>
 			title,
 			content,
 		}),
-	}).then((loadedPost) => {
-		return loadedPost.json();
-	});
+	}).then((loadedPost) => loadedPost.json());

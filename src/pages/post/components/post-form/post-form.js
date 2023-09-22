@@ -47,13 +47,10 @@ const PostFormContainer = ({
 			<Input ref={titleRef} defaultValue={title} placeholder="Заголовок..." />
 
 			<SpecialPanel
+				id={id}
 				publishedAt={publishedAt}
 				margin="20px 0 "
-				editButton={
-					<div onClick={onSave}>
-						<Icon margin="0 10px 0 0" id="fa-floppy-o" size="21px" />
-					</div>
-				}
+				editButton={<Icon id="fa-floppy-o" size="21px" onClick={onSave} />}
 			/>
 			<div
 				ref={contentRef}
@@ -74,6 +71,8 @@ export const PostForm = styled(PostFormContainer)`
 	}
 
 	& .post-text {
+		min-height: 80px;
+		border: 1px solid #000;
 		font-size: 18px;
 		white-space: pre-line;
 	}
