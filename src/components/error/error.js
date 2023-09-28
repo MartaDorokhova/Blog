@@ -1,6 +1,6 @@
 import { H2 } from '../h2/h2';
-import styled from 'styled-components';
 import { PROP_TYPE } from '../../constants';
+import styled from 'styled-components';
 
 const ErrorContainer = ({ className, error }) => {
 	return (

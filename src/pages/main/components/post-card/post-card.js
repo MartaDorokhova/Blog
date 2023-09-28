@@ -2,6 +2,7 @@ import { Link } from 'react-router-dom';
 import PropTypes from 'prop-types';
 import { Icon } from '../../../../components';
 import styled from 'styled-components';
+
 const PostCardContainer = ({
 	className,
 	id,

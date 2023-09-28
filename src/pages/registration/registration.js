@@ -4,13 +4,13 @@ import { useDispatch, useSelector } from 'react-redux';
 import { Navigate } from 'react-router-dom';
 import * as yup from 'yup';
 import { yupResolver } from '@hookform/resolvers/yup';
-import styled from 'styled-components';
 import { server } from '../../bff';
 import { Input, Button, H2, AuthFormError } from '../../components';
 import { useResetForm } from '../../hooks';
 import { setUser } from '../../actions';
 import { selectUserRole } from '../../selectors';
 import { ROLE } from '../../bff/constants';
+import styled from 'styled-components';
 
 const regFormScema = yup.object().shape({
 	login: yup

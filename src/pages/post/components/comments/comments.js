@@ -6,8 +6,8 @@ import { Comment } from './components';
 import { useServerRequest } from '../../../../hooks';
 import { selectUserId, selectUserRole } from '../../../../selectors';
 import { addCommentAsync } from '../../../../actions';
-import styled from 'styled-components';
 import { PROP_TYPE, ROLE } from '../../../../constants';
+import styled from 'styled-components';
 
 const CommentsContainer = ({ className, comments, postId }) => {
 	const [newComment, setNewComment] = useState('');
