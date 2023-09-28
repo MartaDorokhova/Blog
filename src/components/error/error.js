@@ -1,5 +1,6 @@
 import { H2 } from '../h2/h2';
 import styled from 'styled-components';
+import { PROP_TYPE } from '../../constants';
 
 const ErrorContainer = ({ className, error }) => {
 	return (
@@ -18,3 +19,7 @@ export const Error = styled(ErrorContainer)`
 	align-items: center;
 	font-size: 18px;
 `;
+
+Error.propTypes = {
+	error: PROP_TYPE.ERROR,
+};
