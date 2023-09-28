@@ -6,8 +6,8 @@ import { PostContent, Comments, PostForm } from './components';
 import { Error, PrivateContent } from '../../components';
 import { selectPost } from '../../selectors';
 import { useServerRequest } from '../../hooks';
-import styled from 'styled-components';
 import { ROLE } from '../../constants';
+import styled from 'styled-components';
 
 const PostContainer = ({ className }) => {
 	const [error, setError] = useState(null);
@@ -17,6 +17,7 @@ const PostContainer = ({ className }) => {
 	const [isLoading, setIsLoading] = useState(true);
 	const isCreating = !!useMatch('/post');
 	const isEditing = !!useMatch('/post/:id/edit');
+
 	const requestServer = useServerRequest();
 
 	useLayoutEffect(() => {

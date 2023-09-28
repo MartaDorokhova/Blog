@@ -20,7 +20,7 @@ const MainContainer = ({ className }) => {
 				setLastPage(getLastPageFromLinks(links));
 			},
 		);
-	}, [requestServer, page, shouldSearch]);
+	}, [requestServer, page, shouldSearch, searchPhrase]);
 
 	const startDelaySearch = useMemo(() => debounce(setShouldSearch, 2000), []);
 

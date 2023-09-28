@@ -19,14 +19,7 @@
       "login": "user1",
       "password": "qwe123",
       "registered_at": "2023-10-12",
-      "role_id": 0
-    },
-    {
-      "id": "03",
-      "login": "user2",
-      "password": "qwe123",
-      "registered_at": "2023-10-12",
-      "role_id": 0
+      "role_id": 2
     },
     {
       "login": "ritulyok",
@@ -34,6 +27,12 @@
       "registered_at": "2025-9-22",
       "role_id": 1,
       "id": "pmhANwd"
+    },
+    {
+      "login": "reader",
+      "password": "qwe123",
+      "role_id": 2,
+      "id": "m-rPRdN"
     }
   ],
   "roles": [
@@ -157,13 +156,6 @@
   "comments": [
     {
       "author_id": "001",
-      "post_id": "003",
-      "published_at": "2057-10-07 15:57",
-      "content": "asdasdasdas",
-      "id": 8
-    },
-    {
-      "author_id": "001",
       "post_id": "004",
       "published_at": "2036-02-06 06:31",
       "content": "dsffd",
@@ -220,10 +212,24 @@
     },
     {
       "author_id": "001",
+      "post_id": "003",
+      "published_at": "2062-12-08 05:57",
+      "content": "czzsfsd",
+      "id": 20
+    },
+    {
+      "author_id": "pmhANwd",
       "post_id": "001",
-      "published_at": "2041-08-17 19:11",
-      "content": "jhkhjkhjkh",
-      "id": 17
+      "published_at": "2058-03-01 19:47",
+      "content": "fdsdfasdfs",
+      "id": 21
+    },
+    {
+      "author_id": "001",
+      "post_id": "003",
+      "published_at": "2055-02-26 23:17",
+      "content": "asdasd",
+      "id": 23
     }
   ],
   "sessions": [
@@ -259,6 +265,28 @@
         "roleId": 0
       },
       "id": 3
+    },
+    {
+      "hash": "0.52212508075236607751890005602035671472549438476563",
+      "user": {
+        "id": "001",
+        "login": "marta",
+        "password": "qwe123",
+        "registeredAt": "2025-9-22",
+        "roleId": 0
+      },
+      "id": 4
+    },
+    {
+      "hash": "0.47639825097328802883112075505778193473815917968750",
+      "user": {
+        "id": "001",
+        "login": "marta",
+        "password": "qwe123",
+        "registeredAt": "2025-9-22",
+        "roleId": 0
+      },
+      "id": 5
     }
   ]
 }
